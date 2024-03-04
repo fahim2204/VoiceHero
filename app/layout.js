@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${fontPlayfair.variable} ${fontManrope.variable} ${fontInter.variable}`}>
+      <body className={`${fontPlayfair.variable} ${fontManrope.variable} ${fontInter.variable} bg-[#fefcf5]`}>
         <Providers>
           {children}
         </Providers>

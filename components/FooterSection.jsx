@@ -12,7 +12,7 @@ const FooterSection = () => {
         <div className="w-full bg-black text-white">
             <div className='container max-w-7xl w-full py-12 grid md:grid-cols-3 gap-6 md:gap-2 sm:gap-3'>
                 <div className="flex flex-col gap-4 items-center md:items-start">
-                    <Link href={`#`} ><Image className='size-16 object-contain' src={'/image/pesach-logo.png'} height={64} width={64} alt='Logo' /></Link>
+                    <Link href={`#`} ><Image className='size-16 object-contain' src={'/icon/logo.svg'} height={64} width={64} alt='Logo' /></Link>
                     <p>Myrtle Beach Pesach</p>
                     <div className="flex justify-start mt-5">
                         <Link href="#" className="font-medium bg-beta hover:bg-beta/80 hover:ring-1 text-black rounded-3xl px-5 py-2.5 flex items-center gap-2 transition-all duration-300">Reserve Seder and Yom TovMeals <FiArrowUpRight /></Link>
