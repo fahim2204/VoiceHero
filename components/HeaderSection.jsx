@@ -43,40 +43,6 @@ const HeaderSection = () => {
         },
     ]
 
-    const handleClick = (e, url) => {
-        e.preventDefault();
-        setIsSideOpen(false);
-        const id = url.substring(1);
-        const element = document.getElementById(id);
-        if (element) {
-            const offset = 70;
-            const elementRect = element.getBoundingClientRect();
-            const scrollTop = elementRect.top + window.scrollY - offset;
-            window.scrollTo({ top: scrollTop, behavior: 'smooth' });
-        }
-    };
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            {
-                MenuList.forEach((item) => {
-                    const section = document.getElementById(item.url.substring(1));
-                    if (section &&
-                        section.offsetTop <= scrollPosition + 80 &&
-                        section.offsetTop + section.offsetHeight > scrollPosition + 80
-                    ) {
-                        setActiveLink(item.url);
-                    }
-                });
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [MenuList]);
-
     return (
         <div className="sticky top-0 bg-white z-50 shadow">
             <div className='relative min-h-16 container max-w-7xl w-full flex items-center justify-between py-2'>
@@ -84,14 +50,15 @@ const HeaderSection = () => {
                     <Image className="size-8 object-contain" src={'/icon/logo.svg'} height={36} width={37} alt='Voice Hero' />
                     <div className="font-bold text-xl">Voice Hero</div>
                 </Link>
-                <div className="flex items-center gap-5">
+                <button className="lg:hidden" onClick={() => setIsSideOpen(true)}><HiOutlineMenuAlt2 className="text-2xl" /></button>
+                <div className="hidden lg:flex items-center gap-4 xl:gap-5">
                     {MenuList.map((item, index) => {
                         return (
                             <Link key={index} href={item.url} className={`py-2 relative hover:font-medium before:content-normal before:absolute before:bottom-1.5 hover:before:w-1/2 before:h-0.5 before:rounded-3xl before:bg-alpha before:transition-all before:duration-500 transition-all duration-300 ${activeLink === item.url ? 'before:w-1/3 font-medium' : 'before:w-0'}`}>{item.title}</Link>
                         )
                     })}
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="hidden lg:flex items-center gap-2">
                     <button onClick={onOpen} className="border rounded-full px-5 py-1.5 hover:bg-gray-300/10 hover:shadow transition-all duration-300">Log in</button>
                     <button className="text-white bg-alpha border border-alpha rounded-full px-5 py-1.5 hover:bg-alpha/90 hover:border-alpha/85 hover:shadow transition-all duration-300">Try for free</button>
                 </div>
@@ -101,7 +68,6 @@ const HeaderSection = () => {
                 <ModalContent>
                     {(onClose) => (
                         <>
-                            {/* <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader> */}
                             <ModalBody>
                                 <div className="px-6 py-8 flex flex-col items-center gap-6 min-w-unit-xl">
                                     <Link href={'/'} className="flex items-center gap-2 hover:drop-shadow-lg transition-all duration-300">
@@ -127,14 +93,6 @@ const HeaderSection = () => {
                                     </div>
                                 </div>
                             </ModalBody>
-                            {/* <ModalFooter>
-                                <Button color="danger" variant="light" onPress={onClose}>
-                                    Close
-                                </Button>
-                                <Button color="primary" onPress={onClose}>
-                                    Action
-                                </Button>
-                            </ModalFooter> */}
                         </>
                     )}
                 </ModalContent>
