@@ -1,6 +1,8 @@
 import { Inter, Playfair_Display, Manrope } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import HeaderSection from "../components/HeaderSection";
+import FooterSection from "../components/FooterSection";
 
 const fontInter = Inter({ subsets: ["latin"] });
 const fontPlayfair = Playfair_Display({ subsets: ["latin"], variable: '--font-play-fair' })
@@ -17,7 +19,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body className={`${fontPlayfair.variable} ${fontManrope.variable} ${fontInter.variable} bg-[#fefcf5]`}>
         <Providers>
+          <HeaderSection />
           {children}
+          <FooterSection />
         </Providers>
       </body>
     </html>

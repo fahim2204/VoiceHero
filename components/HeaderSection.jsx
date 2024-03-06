@@ -19,7 +19,7 @@ const HeaderSection = () => {
     const MenuList = [
         {
             title: "Text to speech",
-            url: '#index',
+            url: 'text-to-speech',
         },
         {
             title: "AI Voice Generator",
@@ -87,7 +87,7 @@ const HeaderSection = () => {
                 <div className="flex items-center gap-5">
                     {MenuList.map((item, index) => {
                         return (
-                            <Link key={index} href={item.url} onClick={(e) => handleClick(e, item.url)} className={`py-2 relative hover:font-medium before:content-normal before:absolute before:bottom-1.5 hover:before:w-1/2 before:h-0.5 before:rounded-3xl before:bg-alpha before:transition-all before:duration-500 transition-all duration-300 ${activeLink === item.url ? 'before:w-1/3 font-medium' : 'before:w-0'}`}>{item.title}</Link>
+                            <Link key={index} href={item.url} className={`py-2 relative hover:font-medium before:content-normal before:absolute before:bottom-1.5 hover:before:w-1/2 before:h-0.5 before:rounded-3xl before:bg-alpha before:transition-all before:duration-500 transition-all duration-300 ${activeLink === item.url ? 'before:w-1/3 font-medium' : 'before:w-0'}`}>{item.title}</Link>
                         )
                     })}
                 </div>
