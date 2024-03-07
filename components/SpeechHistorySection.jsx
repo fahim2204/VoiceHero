@@ -19,16 +19,16 @@ const SpeechHistorySection = () => {
     ]
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col">
-            <div className="bg-white rounded-3xl p-6 shadow flex flex-col gap-3">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4 py-4 sm:py-8 flex flex-col">
+            <div className="bg-white rounded-3xl p-4 sm:p-6 shadow flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                    <Image className='size-9 object-contain' src={'/icon/history.svg'} height={38} width={38} alt='Voice' />
-                    <div className='font-extrabold text-3xl'>AI-Generated text to speech History</div>
+                    <Image className='size-7 lg:size-9 object-contain' src={'/icon/history.svg'} height={38} width={38} alt='Voice' />
+                    <div className='font-extrabold text-2xl lg:text-3xl'>AI-Generated text to speech History</div>
                 </div>
-                <p className='text-lg opacity-80'>This feature is only for paid users for now. Sign up for a paid plan to try it out.</p>
-                <div className="bg-white rounded-3xl p-6 shadow flex flex-col gap-4 border">
+                <p className='md:text-lg opacity-80'>This feature is only for paid users for now. Sign up for a paid plan to try it out.</p>
+                <div className="bg-white rounded-3xl p-4 sm:p-6 shadow flex flex-col gap-4 border">
                     <div className="flex flex-col gap-3">
-                        <div className="grid grid-cols-3 gap-5">
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                             {FilteredVoice.map((item, index) => {
                                 return (
                                     <div key={index} className="flex flex-col gap-1">
@@ -39,8 +39,8 @@ const SpeechHistorySection = () => {
                                         </div>
                                         <div className="flex items-center justify-between px-2">
                                             <div className="flex flex-col">
-                                                <div className="font-medium text-lg">{item.title}</div>
-                                                <div className="text-[#9B2948] text-sm">Created on {item.created}</div>
+                                                <div className="font-medium sm:text-lg">{item.title}</div>
+                                                <div className="text-[#9B2948] text-xs sm:text-sm">Created on {item.created}</div>
                                             </div>
                                             <Dropdown>
                                                 <DropdownTrigger>

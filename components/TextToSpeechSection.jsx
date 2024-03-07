@@ -18,19 +18,19 @@ const TextToSpeechSection = () => {
     ]
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col">
-            <div className="bg-white rounded-3xl p-6 shadow flex flex-col gap-3">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4 py-4 sm:py-8 flex flex-col">
+            <div className="bg-white rounded-3xl px-3 py-4 sm:p-6 shadow flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                    <Image className='size-9 object-contain' src={'/icon/voice-bubble.svg'} height={38} width={38} alt='Voice' />
-                    <div className='font-extrabold text-3xl'>Text to Voice</div>
+                    <Image className='size-7 lg:size-9 object-contain' src={'/icon/voice-bubble.svg'} height={38} width={38} alt='Voice' />
+                    <div className='font-extrabold text-2xl lg:text-3xl'>Text to Voice</div>
                 </div>
                 <p className='text-lg opacity-80'>You can convert text into speech</p>
-                <div className="bg-white rounded-3xl p-6 shadow flex flex-col gap-4 border">
+                <div className="bg-white rounded-3xl p-4 sm:p-6 shadow flex flex-col gap-4 border">
                     <div className="flex flex-col">
-                        <div className='font-semibold text-xl'>Voice Selection</div>
-                        <p className='opacity-80'>Here is the list of all the voices that you can use to generate speech</p>
+                        <div className='font-semibold text-lg sm:text-xl'>Voice Selection</div>
+                        <p className='opacity-80 text-sm sm:text-base'>Here is the list of all the voices that you can use to generate speech</p>
                     </div>
-                    <div className="flex items-center justify-between gap-4">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4">
                         <Select
                             size={"sm"}
                             variant="bordered"
@@ -38,7 +38,7 @@ const TextToSpeechSection = () => {
                             label="Voice Gender"
                             labelPlacement="inside"
                             // color="alpha"
-                            className="max-w-sm"
+                            className="w-full"
                             classNames={{
                                 // base:"border-alpha",
                                 // label:"text-alpha",
@@ -62,7 +62,7 @@ const TextToSpeechSection = () => {
                             radius="full"
                             label="Choose Language"
                             labelPlacement="inside"
-                            className="max-w-sm"
+                            className="w-full"
 
                         >
                             <SelectItem key='english' value='english'>
@@ -78,7 +78,7 @@ const TextToSpeechSection = () => {
                             radius="full"
                             label="Access"
                             labelPlacement="inside"
-                            className="max-w-sm"
+                            className="w-full"
 
                         >
                             <SelectItem key='english' value='english'>
@@ -90,18 +90,18 @@ const TextToSpeechSection = () => {
                         </Select>
                     </div>
                     <div className="flex flex-col gap-3">
-                        <div className='font-semibold text-xl'>Filtered Results</div>
+                        <div className='font-semibold text-lg sm:text-xl'>Filtered Results</div>
                         <div className="flex flex-col gap-2">
                             {FilteredVoice.map((item, index) => {
                                 return (
-                                    <div key={index} className="rounded-3xl flex justify-between py-3 px-6 items-center bg-beta border w-full hover:border-alpha cursor-pointer transition-all duration-300 relative group">
-                                        <div className="flex justify-center items-center gap-4">
-                                            <BsFillPlayCircleFill className="text-alpha text-6xl" />
+                                    <div key={index} className="rounded-2xl sm:rounded-3xl flex justify-between py-1.5 sm:py-3 px-3 sm:px-6 items-center bg-beta border w-full hover:border-alpha cursor-pointer transition-all duration-300 relative group">
+                                        <div className="flex justify-center items-center gap-3 sm:gap-4">
+                                            <BsFillPlayCircleFill className="text-alpha text-4xl sm:text-6xl" />
                                             <div className="flex flex-col gap-1">
-                                                <div className="font-medium text-xl">{item.title}</div>
+                                                <div className="font-medium sm:text-xl">{item.title}</div>
                                                 <div className="flex items-center gap-1">
-                                                    <button className="bg-white text-sm font-medium px-3 py-1 rounded-3xl">{item.lang}</button>
-                                                    <button className="bg-white text-sm font-medium px-3 py-1 rounded-3xl">{item.gender}</button>
+                                                    <button className="bg-white text-xs sm:text-sm font-medium px-3 py-1 rounded-3xl">{item.lang}</button>
+                                                    <button className="bg-white text-xs sm:text-sm font-medium px-3 py-1 rounded-3xl">{item.gender}</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -110,7 +110,7 @@ const TextToSpeechSection = () => {
                                 );
                             })}
                         </div>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row gap-1.5 items-center justify-between">
                             <div className="opacity-80 text-sm">Showing 3 to 5 of 227 results</div>
                             <div className="flex items-center gap-1">
                                 <button className="rounded-full text-sm size-6 flex items-center justify-center hover:bg-alpha hover:text-white hover:shadow transition-all duration-300"><IoIosArrowBack /></button>
@@ -123,10 +123,10 @@ const TextToSpeechSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-white rounded-3xl p-6 shadow flex flex-col gap-4 border">
+                <div className="bg-white rounded-3xl p-4 sm:p-6 shadow flex flex-col gap-4 border">
                     <div className="flex flex-col">
-                        <div className='font-semibold text-xl'>Your Text</div>
-                        <p className='opacity-80'>Add your text below to generate speech</p>
+                        <div className='font-semibold text-lg sm:text-xl'>Your Text</div>
+                        <p className='opacity-80 text-sm sm:text-base'>Add your text below to generate speech</p>
                     </div>
                     <textarea className="border border-black/20 rounded-3xl bg-beta p-4 focus-within:ring-0 focus-within:outline-0 focus-within:border-alpha/50" name="text" id="text" cols="30" rows="6" placeholder="Write your text here"></textarea>
                 </div>
