@@ -1,4 +1,6 @@
 'use client'
+import { BsFillPlayFill } from "react-icons/bs";
+import { BsStopFill } from "react-icons/bs";
 import Image from 'next/image'
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from 'react';
@@ -12,30 +14,37 @@ const HeroSection = () => {
         {
             name: 'Ann George',
             voice: 'Male English Voice',
+            voiceID: 6,
             img: 'artist-1.webp',
             text: 'Welcome to voice hero which can read to you',
         },
         {
             name: 'Jordyn George',
             voice: 'Female English Voice',
+            voiceID: 10,
             img: 'artist-2.webp',
             text: 'Welcome to voice hero which can read to you',
         },
         {
             name: 'Ann George',
-            voice: 'Male English Voice',
+            voice: 'Female English Voice',
+            voiceID: 11,
             img: 'artist-3.webp',
             text: 'Welcome to voice hero which can read to you',
         },
         {
             name: 'Jordyn George',
-            voice: 'Female English Voice',
+            voice: 'Male English Voice',
+            voiceID: 12,
             img: 'artist-4.webp',
             text: 'Welcome to voice hero which can read to you',
         },
     ]
 
+
     const TTSComponent = ({ item, index }) => {
+        const containerRef = useRef(null); // Ref to the container element
+
         const [highlightSection, setHighlightSection] = useState({
             from: 0,
             to: 0
@@ -43,10 +52,23 @@ const HeroSection = () => {
 
         const [percentage, setPercentage] = useState(0);
         const [textLength, setTextLength] = useState(0);
+        const [isPlaying, setIsPlaying] = useState(false);
 
         useEffect(() => {
             setTextLength(item.text.length);
         }, []);
+
+        useEffect(() => {
+            // Scroll the container into view if the highlighted section is out of view
+            if (containerRef.current) {
+                const container = containerRef.current;
+                const highlightedElement = container.querySelector('.highlighted');
+
+                if (highlightedElement) {
+                    highlightedElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                }
+            }
+        }, [highlightSection]);
 
         const handlePlayTTS = () => {
             const synth = window.speechSynthesis;
@@ -55,9 +77,10 @@ const HeroSection = () => {
                 console.error("no tts");
                 return;
             }
-            let isPlaying = false;
+            setIsPlaying(false)
 
             let utterance = new SpeechSynthesisUtterance(item.text);
+            // utterance.voice = synth.getVoices()[item.voiceID];
             utterance.addEventListener("boundary", (event) => {
                 const { charIndex, charLength } = event;
                 setPercentage(((charIndex + charLength) / textLength) * 100);
@@ -65,22 +88,22 @@ const HeroSection = () => {
             });
             utterance.addEventListener('end', () => {
                 setHighlightSection({ from: 0, to: 0 });
-                isPlaying = false;
+                setPercentage(0)
+                setIsPlaying(false)
             });
             utterance.addEventListener('cancel', () => {
                 setHighlightSection({ from: 0, to: 0 });
-                isPlaying = false;
+                setPercentage(0)
+                setIsPlaying(false)
             });
 
-            // synth.speak(utterance);
             if (isPlaying) {
                 synth.cancel();
             } else {
+                setIsPlaying(true)
                 synth.speak(utterance);
-                isPlaying = true;
             }
         };
-
 
         const [start, highlight, finish] = [
             item.text.slice(0, highlightSection.from),
@@ -89,7 +112,7 @@ const HeroSection = () => {
         ]
 
         return (
-            <div key={index} className="rounded-full flex justify-between p-2 md:p-3 items-center bg-beta w-full hover:bg-beta-100 transition-all duration-300">
+            <div key={index} ref={containerRef} className="rounded-full flex justify-between gap-2 p-2 md:p-3 items-center bg-beta w-full">
                 <div className="flex justify-center items-center gap-4">
                     <Image className="size-14 md:size-16 object-contain" src={`/image/${item.img}`} height={100} width={100} alt={item.name} />
 
@@ -98,18 +121,27 @@ const HeroSection = () => {
                             <div className="font-bold md:text-xl">{item.name}</div>
                             <div className="text-sm md:text-base">{item.voice}</div>
                         </div>
-                    </> : <>
-                        <p className='font-semibold text-lg'>
+                    </> : <div className='overflow-y-scroll max-h-12 sm:max-h-14' style={{ scrollbarWidth: 'none', '-ms-overflow-style': 'none', '&::-webkit-scrollbar': { display: 'none' } }}>
+                        <p className='font-semibold sm:text-lg'>
                             {start}
-                            <span className={`bg-alpha text-white rounded ${highlight ? 'px-1' : ''}`}>{highlight}</span>
+                            <span className={`bg-alpha text-white rounded ${highlight ? 'px-1 highlighted' : ''}`}>{highlight}</span>
                             {finish}
                         </p>
-                    </>}
+                    </div>}
                 </div>
-                <button onClick={handlePlayTTS} className=' flex-shrink-0'><Image className="size-14 md:size-16 object-contain" src={'/icon/play.svg'} height={80} width={80} alt='play' /></button>
+                <button onClick={handlePlayTTS} className='relative z-0 flex-shrink-0 flex items-center justify-center size-14 md:size-16 rounded-full text-3xl md:text-4xl text-alpha overflow-hidden'>
+                    {isPlaying ? <>
+                        <BsStopFill className="z-30" />
+                    </> : <>
+                        <BsFillPlayFill className="ml-1 z-30" />
+                    </>}
+                    <div className="absolute rounded-full z-20 bg-white size-12 md:size-14"></div>
+                    <div style={{ background: `conic-gradient(#ff7251 ${3.6 * percentage}deg, #fbf3dd 0deg)` }} className="absolute rounded-full z-10 bg-white size-20 transition-background !duration-500"></div>
+                </button>
             </div>
         );
     }
+
 
     return (
         <div className="max-w-[1400px] mx-auto z-0 relative overflow-hidden">
