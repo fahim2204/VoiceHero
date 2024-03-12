@@ -16,28 +16,28 @@ import { Pagination, Navigation, Autoplay, Mousewheel } from 'swiper/modules';
 const BenefitSection = () => {
     const ReviewList = [
         {
-            name: "Jakob Levin",
-            title: "Freelance Designer",
+            name: "Usman",
+            title: "Web Designer",
             img: "review-1.webp",
-            desc: "“We were blown away when we saw VoiceHero. The combination of social, email, knowledge base, mobile, ets.”",
+            desc: "“I love listening to my backlog of bookmarked articles from The New Yorker, Tech Crunch, and Bloomberg Tech”",
         },
         {
-            name: "Maren Rhiel Madsen",
-            title: "Freelance Designer",
+            name: "Catalin",
+            title: "Product Manager",
             img: "review-2.webp",
-            desc: "“We were blown away when we saw VoiceHero. The combination of social, email, knowledge base, mobile, ets.”",
+            desc: "“I use Voice Hero to record anything from guided meditations to summaries of books I don’t have the time to read in full”",
         },
         {
-            name: "Kierra Schleifer",
+            name: "Rishi",
             title: "Freelance Designer",
             img: "review-3.webp",
-            desc: "“We were blown away when we saw VoiceHero. The combination of social, email, knowledge base, mobile, ets.”",
+            desc: "“This is hands down the best text-to-speech consumer product on the market. I know because I built it”",
         },
         {
-            name: "Mila McSabbu",
+            name: "Theo",
             title: "Freelance Designer",
             img: "review-4.webp",
-            desc: "“We were blown away when we saw Mixland. The combination of social, email, knowledge base, mobile, ets.”",
+            desc: "“I am a very curious person and I start more than 5 books at a time. Now finally I am able to finish them by listening to summaries”",
         },
     ]
 
@@ -58,12 +58,12 @@ const BenefitSection = () => {
                     <div className="rounded-[2.5rem] relative overflow-hidden">
                         <Image className="w-full object-cover" src={`/image/benefit-2.webp`} height={603} width={515} alt={'benefits'} />
                         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black/70 from-50%"></div>
-                        <div className="absolute bottom-6 sm:bottom-8 w-full text-white font-bold text-2xl sm:text-3xl text-center">Double <br /> your focus</div>
+                        <div className="absolute bottom-6 sm:bottom-8 w-full text-white font-bold text-2xl sm:text-3xl text-center">Triple <br /> your focus</div>
                     </div>
                     <div className="rounded-[2.5rem] relative overflow-hidden">
                         <Image className="w-full object-cover" src={`/image/benefit-3.webp`} height={603} width={515} alt={'benefits'} />
                         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black/70 from-50%"></div>
-                        <div className="absolute bottom-6 sm:bottom-8 w-full text-white font-bold text-2xl sm:text-3xl text-center">Double <br /> your exposure</div>
+                        <div className="absolute bottom-6 sm:bottom-8 w-full text-white font-bold text-2xl sm:text-3xl text-center">Quadruple <br /> your wisdom</div>
                     </div>
 
                 </div>

@@ -34,9 +34,9 @@ export default function FaqSection() {
         <div className="max-w-[1400px] mx-auto z-0 relative overflow-hidden">
             <div className='container max-w-7xl w-full my-8 md:my-16'>
                 <div className="w-full flex flex-col gap-3 mb-12">
-                    <p className="uppercase font-bold text-sm md:text-base  text-[#9B2948] tracking-[0.3em] text-center">FAQS</p>
-                    <div className="text-5xl md:text-6xl lg:text-6xl text-center font-semibold">Frequently <span className="text-alpha">Asked</span> Question</div>
-                    <p className="max-w-2xl md:text-lg mx-auto text-center">VoiceHero is the #1 rated AI text to speech app in its category with over 250,000.</p>
+                    <p className="uppercase font-bold text-sm md:text-base  text-[#9B2948] tracking-[0.3em] text-center">FAQ</p>
+                    <div className="text-5xl md:text-6xl lg:text-6xl text-center font-semibold">Frequently <span className="text-alpha">Asked</span> Questions</div>
+                    <p className="max-w-2xl md:text-lg mx-auto text-center">Here are some of the questions we usually get</p>
                 </div>
                 <ul className="max-w-4xl w-full mx-auto flex flex-col gap-3 mt-10 mb-12 md:mb-28">
                     {

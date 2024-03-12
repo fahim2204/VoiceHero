@@ -6,26 +6,26 @@ const FeatureSection = () => {
 
     const FeatureList = [
         {
-            title: 'Listen at any speed',
-            details: 'Our high-quality AI voices can read up to 9x faster than the average reading speed, so you can learn even more in less time.',
+            title: 'Tailored for you 100%',
+            details: 'Adjust voice tones, accents, and speaking pace. Our platform offers a rich selection of voices and you can bookmark your faves.',
             img: 'info-1.webp',
             bg: '#ffeeee',
         },
         {
-            title: 'Natural-sounding AI Voice',
-            details: 'Our high-quality AI voices can read up to 9x faster than the average reading speed, so you can learn even more in less time.',
+            title: 'Natural-sounding',
+            details: 'Natural-sounding voices available in over 30 languages, including Arabic, Chinese, English, French, and Spanish, to name just a few.',
             img: 'info-1.webp',
             bg: '#efffde',
         },
         {
             title: 'Listen on desktop or mobile devices',
-            details: 'Our high-quality AI voices can read up to 9x faster than the average reading speed, so you can learn even more in less time.',
+            details: 'Voice Hero ensures seamless synchronization across devices. Your content is always at your fingertips, ready to be heard anytime, anywhere.',
             img: 'info-1.webp',
             bg: '#f3edff',
         },
         {
-            title: 'Listen to any page',
-            details: 'Our high-quality AI voices can read up to 9x faster than the average reading speed, so you can learn even more in less time.',
+            title: 'Works with anything',
+            details: 'Listen to our high-quality AI voices reading anything from your library: PDFs, articles, books, workshop summaries, tutorials, and more.',
             img: 'info-1.webp',
             bg: '#dfffee',
         },
@@ -35,9 +35,9 @@ const FeatureSection = () => {
         <div className="max-w-[1400px] mx-auto z-0 relative overflow-hidden">
             <div className='container max-w-7xl w-full my-8 md:my-16'>
                 <div className="w-full flex flex-col gap-3 mb-12">
-                    <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em] text-center">Multiplateform</p>
-                    <div className="text-5xl md:text-6xl lg:text-6xl text-center font-semibold">Enjoy your <span className="text-alpha">new reading</span> superpowers</div>
-                    <p className="max-w-2xl md:text-lg mx-auto text-center">VoiceHero is the #1 rated AI text to speech app in its category with over 250,000.</p>
+                    <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em] text-center">the future is now</p>
+                    <div className="text-5xl md:text-6xl lg:text-6xl text-center font-semibold">Embrace <span className="text-alpha">the future</span> of voice technology</div>
+                    <p className="max-w-2xl md:text-lg mx-auto text-center">VoiceHero has all the features you need, and none you don’t</p>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-10">
                     {FeatureList.map((item, index) => {

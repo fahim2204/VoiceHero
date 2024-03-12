@@ -147,9 +147,9 @@ const HeroSection = () => {
         <div className="max-w-[1400px] mx-auto z-0 relative overflow-hidden">
             <div className='container max-w-7xl w-full my-16'>
                 <div className="w-full flex flex-col gap-3">
-                    <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em] text-center">AI Voice Generator</p>
-                    <div className="text-5xl md:text-6xl lg:text-6xl text-center font-semibold">AI voice generator <br /> that <span className="text-alpha">captivates</span> your audience</div>
-                    <p className="max-w-2xl md:text-lg mx-auto text-center">1,000,000 users love VoiceHero. Award-winning AI Voice Generator and text to speech software with 500+ voices in 100 languages. </p>
+                    <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em] text-center">text to speech</p>
+                    <div className="text-5xl md:text-6xl lg:text-6xl text-center font-semibold">AI voice generator <br /> that <span className="text-alpha">educates</span> and <span className="text-alpha">entertains</span></div>
+                    <p className="max-w-2xl md:text-lg mx-auto text-center">Turn any article, book, newsletter, or social media thread into captivating podcast episodes or audio books, exclusively created for you.</p>
                     <div className="flex justify-center">
                         <button className="text-white font-semibold bg-alpha border border-alpha drop-shadow-[0_5px_8px_#FF7251] rounded-full px-6 py-3 hover:bg-alpha-500 hover:border-500 hover:shadow transition-all duration-300">Try Now for free!</button>
                     </div>
@@ -167,13 +167,13 @@ const HeroSection = () => {
             </div>
             <div className="container max-w-5xl my-16">
                 <div className="font-semibold text-2xl md:text-3xl text-center mb-6 md:mb-12">
-                    Trusted by nearly <span className="text-alpha">5000+</span> paying customers
+                    Trusted by <span className="text-alpha">124</span> users and collaborating with
                 </div>
                 <div className="flex items-center justify-around gap-4 flex-wrap">
-                    <Image className="object-contain h-6 md:h-9 w-auto" src={'/icon/customer-1.svg'} height={40} width={196} alt='customer' />
-                    <Image className="object-contain h-6 md:h-9 w-auto" src={'/icon/customer-2.svg'} height={40} width={196} alt='customer' />
-                    <Image className="object-contain h-6 md:h-9 w-auto" src={'/icon/customer-3.svg'} height={40} width={196} alt='customer' />
-                    <Image className="object-contain h-6 md:h-9 w-auto" src={'/icon/customer-4.svg'} height={40} width={196} alt='customer' />
+                    <Image className="object-contain h-6 md:h-9 w-auto grayscale opacity-80" src={'/icon/customer-1.svg'} height={40} width={196} alt='customer' />
+                    <Image className="object-contain h-6 md:h-9 w-auto grayscale opacity-80" src={'/icon/customer-2.svg'} height={40} width={196} alt='customer' />
+                    <Image className="object-contain h-6 md:h-9 w-auto grayscale opacity-80" src={'/icon/customer-3.webp'} height={40} width={196} alt='customer' />
+                    <Image className="object-contain h-6 md:h-9 w-auto grayscale opacity-80" src={'/icon/customer-4.webp'} height={40} width={196} alt='customer' />
                 </div>
             </div>
         </div>

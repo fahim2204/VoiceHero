@@ -10,28 +10,28 @@ const InfoSection = () => {
                 <div className="grid md:grid-cols-2 gap-4 items-center mb-12">
                     <div className="flex flex-col gap-3">
                         <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em]">AI Voice Generator</p>
-                        <div className="text-2xl md:text-3xl lg:text-4xl font-semibold">We are the ultimate
-                            for <br /> AI tool for <span className="text-alpha">text to speech</span></div>
+                        <div className="text-2xl md:text-3xl lg:text-4xl font-semibold">Meet the ultimate
+                            <br /> AI tool for <span className="text-alpha">text to speech</span></div>
                     </div>
                     <div className="flex items-center">
                         <p>
-                            AI voice generator at core. Super rich feature set, giving you an unparalleled voiceover production experience powered by realistic AI Voices and video editor online.
+                        Whether you’e a student, a marketer, or a knowledge worker, you’ll benefit tremendously from our library of AI models and voices.We’re making it easy for you to use the latest technology without having to write a line of code.
                         </p>
                     </div>
                 </div>
                 <div className="bg-beta/50 px-4 md:px-8 pt-6 md:pt-12 rounded-3xl">
                     <div className="flex items-center gap-2 text-sm md:text-base flex-wrap">
                         <div className="border border-alpha rounded-3xl px-4 py-1 font-semibold hover:bg-alpha hover:text-white cursor-pointer transition-all duration-300">
-                            AI Voice Over
+                            Article Voiceover
                         </div>
                         <div className="border border-alpha rounded-3xl px-4 py-1 font-semibold hover:bg-alpha hover:text-white cursor-pointer transition-all duration-300">
-                            AI Video Studio
+                            Personalised Podcast
                         </div>
                         <div className="border border-alpha rounded-3xl px-4 py-1 font-semibold hover:bg-alpha hover:text-white cursor-pointer transition-all duration-300">
                             AI Dubbing
                         </div>
                         <div className="border border-alpha rounded-3xl px-4 py-1 font-semibold hover:bg-alpha hover:text-white cursor-pointer transition-all duration-300">
-                            Voice Cloning
+                            Voice to Text
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4 overflow-hidden">

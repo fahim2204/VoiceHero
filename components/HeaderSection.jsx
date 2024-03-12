@@ -25,19 +25,11 @@ const HeaderSection = () => {
             url: '#',
         },
         {
-            title: "Products",
+            title: "Pricing",
             url: '#',
         },
         {
-            title: "Teams",
-            url: '#',
-        },
-        {
-            title: "Edu",
-            url: '#',
-        },
-        {
-            title: "About",
+            title: "About us",
             url: '#',
         },
     ]
