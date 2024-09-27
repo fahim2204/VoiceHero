@@ -41,7 +41,7 @@ const UsecaseSection = () => {
         <div className="max-w-[1400px] mx-auto z-0 relative overflow-hidden">
             <div className='container max-w-7xl w-full my-16'>
                 <div className="w-full flex flex-col gap-3 mb-12">
-                    <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em] text-center">Multiplateform</p>
+                    <p className="uppercase font-bold text-sm md:text-base text-delta tracking-[0.3em] text-center">Multiplateform</p>
                     <div className="text-4xl sm:text-5xl md:text-6xl text-center font-semibold">Best  <span className="text-alpha">AI text to speech</span> for <br />any use case</div>
                     <p className="max-w-2xl md:text-lg mx-auto text-center">VoiceHero can help you with all of these things and much more.</p>
                 </div>

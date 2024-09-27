@@ -40,7 +40,7 @@ const SpeechHistorySection = () => {
                                         <div className="flex items-center justify-between px-2">
                                             <div className="flex flex-col">
                                                 <div className="font-medium sm:text-lg">{item.title}</div>
-                                                <div className="text-[#9B2948] text-xs sm:text-sm">Created on {item.created}</div>
+                                                <div className="text-delta text-xs sm:text-sm">Created on {item.created}</div>
                                             </div>
                                             <Dropdown>
                                                 <DropdownTrigger>

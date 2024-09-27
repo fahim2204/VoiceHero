@@ -48,7 +48,19 @@ module.exports = {
           '900': '#6d321a',
           '950': '#3e190a',
         },
-        gamma: "#FFECF1"
+        gamma: "#FFECF1",
+        delta: {
+          DEFAULT: "#9b2948",
+          100: "#ebd4da",
+          200: "#d7a9b6",
+          300: "#c37f91",
+          400: "#af546d",
+          500: "#9b2948",
+          600: "#7c213a",
+          700: "#5d192b",
+          800: "#3e101d",
+          900: "#1f080e"
+        },
       },
       fontFamily: {
         alpha: ['var(--font-manrope)'],

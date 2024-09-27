@@ -147,7 +147,7 @@ const HeroSection = () => {
         <div className="max-w-[1400px] mx-auto z-0 relative overflow-hidden">
             <div className='container max-w-7xl w-full my-16'>
                 <div className="w-full flex flex-col gap-3">
-                    <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em] text-center">text to speech</p>
+                    <p className="uppercase font-bold text-sm md:text-base text-delta tracking-[0.3em] text-center">text to speech</p>
                     <div className="max-w-4xl  mx-auto text-4xl sm:text-5xl md:text-6xl text-center font-semibold">AI voice generator that melts any text into <span className="text-alpha">audio gold</span></div>
                     <p className="max-w-2xl md:text-lg mx-auto text-center">Turn any article, book, newsletter, or social media thread into delightful audio.</p>
                     <div className="flex justify-center">

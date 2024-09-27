@@ -53,7 +53,7 @@ export default function FaqSection() {
         <div className="max-w-[1400px] mx-auto z-0 relative overflow-hidden">
             <div className='container max-w-7xl w-full my-8 md:my-16'>
                 <div className="w-full flex flex-col gap-3 mb-12">
-                    <p className="uppercase font-bold text-sm md:text-base  text-[#9B2948] tracking-[0.3em] text-center">FAQ</p>
+                    <p className="uppercase font-bold text-sm md:text-base  text-delta tracking-[0.3em] text-center">FAQ</p>
                     <div className="text-4xl sm:text-5xl md:text-6xl text-center font-semibold">Frequently <span className="text-alpha">Asked</span> Questions</div>
                     <p className="max-w-2xl md:text-lg mx-auto text-center">Here are some of the questions we usually get</p>
                 </div>

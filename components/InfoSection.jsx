@@ -11,7 +11,7 @@ const InfoSection = () => {
             <div className='container max-w-7xl w-full my:10 md:my-16'>
                 <div className="grid md:grid-cols-2 gap-4 items-center mb-12">
                     <div className="flex flex-col gap-3">
-                        <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em]">AI Voice Generator</p>
+                        <p className="uppercase font-bold text-sm md:text-base text-delta tracking-[0.3em]">AI Voice Generator</p>
                         <div className="text-2xl md:text-3xl lg:text-4xl font-semibold">Meet the ultimate
                             <br /> AI tool for <span className="text-alpha">text to speech</span></div>
                     </div>
