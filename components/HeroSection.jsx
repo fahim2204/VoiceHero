@@ -112,14 +112,14 @@ const HeroSection = () => {
         ]
 
         return (
-            <div key={index} ref={containerRef} className="rounded-full flex justify-between gap-2 p-2 md:p-3 items-center bg-beta w-full">
+            <div key={index} ref={containerRef} className="rounded-full flex justify-between gap-2 p-1.5 sm:p-2 md:p-3 items-center bg-beta w-full">
                 <div className="flex justify-center items-center gap-4">
                     <Image className="size-14 md:size-16 object-contain" src={`/image/${item.img}`} height={100} width={100} alt={item.name} />
 
                     {highlightSection.from === 0 && highlightSection.to === 0 ? <>
                         <div className="flex flex-col md:gap-0.5">
-                            <div className="font-bold md:text-xl">{item.name}</div>
-                            <div className="text-sm md:text-base">{item.voice}</div>
+                            <div className="font-bold text-sm sm:text-base md:text-xl">{item.name}</div>
+                            <div className="text-xs sm:text-sm md:text-base">{item.voice}</div>
                         </div>
                     </> : <div className='overflow-y-scroll max-h-12 sm:max-h-14' style={{ scrollbarWidth: 'none', '-ms-overflow-style': 'none', '&::-webkit-scrollbar': { display: 'none' } }}>
                         <p className='font-semibold sm:text-lg'>
@@ -148,8 +148,8 @@ const HeroSection = () => {
             <div className='container max-w-7xl w-full my-16'>
                 <div className="w-full flex flex-col gap-3">
                     <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em] text-center">text to speech</p>
-                    <div className="text-5xl md:text-6xl lg:text-6xl text-center font-semibold">AI voice generator <br /> that <span className="text-alpha">educates</span> and <span className="text-alpha">entertains</span></div>
-                    <p className="max-w-2xl md:text-lg mx-auto text-center">Turn any article, book, newsletter, or social media thread into captivating podcast episodes or audio books, exclusively created for you.</p>
+                    <div className="max-w-4xl  mx-auto text-4xl sm:text-5xl md:text-6xl text-center font-semibold">AI voice generator that melts any text into <span className="text-alpha">audio gold</span></div>
+                    <p className="max-w-2xl md:text-lg mx-auto text-center">Turn any article, book, newsletter, or social media thread into delightful audio.</p>
                     <div className="flex justify-center">
                         <button className="text-white font-semibold bg-alpha border border-alpha drop-shadow-[0_5px_8px_#FF7251] rounded-full px-6 py-3 hover:bg-alpha-500 hover:border-500 hover:shadow transition-all duration-300">Try Now for free!</button>
                     </div>

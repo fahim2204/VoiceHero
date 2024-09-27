@@ -25,7 +25,7 @@ const BenefitSection = () => {
             name: "Catalin",
             title: "Product Manager",
             img: "review-2.webp",
-            desc: "“I use Voice Hero to record anything from guided meditations to summaries of books I don’t have the time to read in full”",
+            desc: "“I use Voice Hero to record anything from guided meditations to summaries of books I don't have the time to read in full”",
         },
         {
             name: "Rishi",
@@ -45,25 +45,25 @@ const BenefitSection = () => {
         <div className="max-w-[1400px] mx-auto z-0 relative overflow-hidden">
             <div className='container max-w-7xl w-full my-16'>
                 <div className="w-full flex flex-col gap-3 mb-12">
-                    <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em] text-center">Multiplateform</p>
-                    <div className="text-5xl md:text-6xl lg:text-6xl text-center font-semibold">Listening is  <span className="text-alpha">the fastest</span>  way to read </div>
-                    <p className="max-w-2xl md:text-lg mx-auto text-center">VoiceHero is the #1 rated AI text to speech app in its category with over 250,000.</p>
+                    <p className="uppercase font-bold text-sm md:text-base text-[#9B2948] tracking-[0.3em] text-center">Your new Superpower</p>
+                    <div className="text-4xl sm:text-5xl md:text-6xl text-center font-semibold"><span className="text-alpha">Listening</span> is the new way to read </div>
+                    <p className="max-w-3xl md:text-lg mx-auto text-center">Meet your sidekicks, helping you to study or go through any amount of text much faster.</p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-6">
                     <div className="rounded-[2.5rem] relative overflow-hidden">
                         <Image className="w-full object-cover" src={`/image/benefit-1.webp`} height={603} width={515} alt={'benefits'} />
-                        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black/70 from-50%"></div>
-                        <div className="absolute bottom-6 sm:bottom-8 w-full text-white font-bold text-2xl sm:text-3xl text-center">Double <br /> your reading</div>
+                        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black/80 from-40%"></div>
+                        <div className="absolute bottom-6 sm:bottom-8 w-full text-white font-bold text-2xl sm:text-3xl text-center">The Sonic <br /> Alchemist</div>
                     </div>
                     <div className="rounded-[2.5rem] relative overflow-hidden">
                         <Image className="w-full object-cover" src={`/image/benefit-2.webp`} height={603} width={515} alt={'benefits'} />
-                        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black/70 from-50%"></div>
-                        <div className="absolute bottom-6 sm:bottom-8 w-full text-white font-bold text-2xl sm:text-3xl text-center">Triple <br /> your focus</div>
+                        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black/80 from-40%"></div>
+                        <div className="absolute bottom-6 sm:bottom-8 w-full text-white font-bold text-2xl sm:text-3xl text-center">The Vocal <br /> Visionary</div>
                     </div>
                     <div className="rounded-[2.5rem] relative overflow-hidden">
                         <Image className="w-full object-cover" src={`/image/benefit-3.webp`} height={603} width={515} alt={'benefits'} />
-                        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black/70 from-50%"></div>
-                        <div className="absolute bottom-6 sm:bottom-8 w-full text-white font-bold text-2xl sm:text-3xl text-center">Quadruple <br /> your wisdom</div>
+                        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black/80 from-40%"></div>
+                        <div className="absolute bottom-6 sm:bottom-8 w-full text-white font-bold text-2xl sm:text-3xl text-center">The <br /> Podmaster</div>
                     </div>
 
                 </div>

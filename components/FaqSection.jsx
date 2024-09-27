@@ -2,30 +2,49 @@ export default function FaqSection() {
 
     const FaqList = [
         {
-            ques: "Is any of my personal information stored in the App?",
-            ans: "Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.",
+            ques: "What is Voice Hero?",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
         },
         {
-            ques: "What formats can I download my transaction history in?",
-            ans: "Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.",
+            ques: "How does Voice Hero work?",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
         },
         {
-            ques: "Can I schedule future transfers?",
-            ans: "Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.",
+            ques: "What kind of content can I convert to audio?",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
         },
         {
-            ques: "When can I use Banking App services?",
-            ans: "Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.",
+            ques: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs.",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
         },
         {
-            ques: "Can I create my own password that is easy for me to remember?",
-            ans: "Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.",
+            ques: "Can I customize the voice in my audio?",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
         },
         {
-            ques: "What happens if I forget or lose my password?",
-            ans: "Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.",
+            ques: "Is there a limit to how much text I can convert?",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
         },
-
+        {
+            ques: "How do I access my audio files?",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
+        },
+        {
+            ques: "Is Voice Hero suitable for educational purposes?",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
+        },
+        {
+            ques: "Can I use Voice Hero for commercial purposes?",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
+        },
+        {
+            ques: "What languages does Voice Hero support?",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
+        },
+        {
+            ques: "How can I get started with Voice Hero?",
+            ans: "Anything from articles, books, newsletters, to social media threads—perfect for diverse learning and entertainment needs."
+        },
     ];
 
 
@@ -35,7 +54,7 @@ export default function FaqSection() {
             <div className='container max-w-7xl w-full my-8 md:my-16'>
                 <div className="w-full flex flex-col gap-3 mb-12">
                     <p className="uppercase font-bold text-sm md:text-base  text-[#9B2948] tracking-[0.3em] text-center">FAQ</p>
-                    <div className="text-5xl md:text-6xl lg:text-6xl text-center font-semibold">Frequently <span className="text-alpha">Asked</span> Questions</div>
+                    <div className="text-4xl sm:text-5xl md:text-6xl text-center font-semibold">Frequently <span className="text-alpha">Asked</span> Questions</div>
                     <p className="max-w-2xl md:text-lg mx-auto text-center">Here are some of the questions we usually get</p>
                 </div>
                 <ul className="max-w-4xl w-full mx-auto flex flex-col gap-3 mt-10 mb-12 md:mb-28">
