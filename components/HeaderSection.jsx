@@ -18,7 +18,7 @@ const HeaderSection = () => {
     const MenuList = [
         {
             title: "Text to speech",
-            url: 'text-to-speech',
+            url: '/text-to-speech',
         },
         {
             title: "AI Voice Generator",
@@ -30,7 +30,7 @@ const HeaderSection = () => {
         },
         {
             title: "About us",
-            url: '#',
+            url: '/about',
         },
     ]
 
