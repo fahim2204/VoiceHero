@@ -176,7 +176,7 @@ export default function Home() {
                                             }
                                             classNames={{
                                                 mainWrapper: "mt-4",
-                                                inputWrapper: "bg-white group-data-[hover=true]:bg-white group-data-[focus=true]:bg-slate-50 border-1 border-slate-200 py-0 h-full pe-0.5",
+                                                inputWrapper: "bg-white group-data-[hover=true]:bg-white group-data-[focus=true]:bg-slate-50 border-1 border-slate-200 py-0 h-full pe-0.5 py-0.5",
                                                 innerWrapper: "pb-0",
                                                 input: "border-0 focus-visible:ring-0 !ps-2"
                                             }}
