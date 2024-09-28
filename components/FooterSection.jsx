@@ -33,7 +33,7 @@ const FooterSection = () => {
                 <ul className="col-span-9 sm:col-span-3 md:col-span-2 list-none flex flex-col items-center md:items-start gap-2 md:gap-3">
                     <div className="font-bold text-lg mb-2 md:mb-3">Resources</div>
                     <Link href={'#'} className='hover:translate-x-1 transition-all duration-300'>Tutorials</Link>
-                    <Link href={'#'} className='hover:translate-x-1 transition-all duration-300'>Blogs</Link>
+                    <Link href={'/blog'} className='hover:translate-x-1 transition-all duration-300'>Blogs</Link>
                     <Link href={'#'} className='hover:translate-x-1 transition-all duration-300'>Affiliate Program</Link>
                     <Link href={'#'} className='hover:translate-x-1 transition-all duration-300'>FAQ</Link>
                 </ul>
